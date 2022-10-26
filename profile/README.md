@@ -73,13 +73,30 @@
 
 ## (중간) 결과물
 
-- 배포 주소 : [168.188.126.186](168.188.126.186)
+### 프로젝트 결과()
+#### Docker로 설치
 
-- Docker로 설치
+`docker pull mysql`
 
-  `docker pull fortune00/cnusam`
+`docker pull redis`
 
-- [발표 자료](https://docs.google.com/presentation/d/1Y0q7jJ7Z9ecbyBmio7GP2LWS1yq0IYEHojlePhpeQhI/edit#slide=id.g12f65192fc9_0_25)
+`docker pull fortune00/cnusam`
+ 
+ #### Docker로 실행
+ 
+ `docker run fortune00/cnusam`
+
+#### 직접 파일 실행
+
+`docker run -p 3360:3306 -e MYSQL_ROOT_PASSWORD=root mysql`
+ 
+`docker run -p 6379:6379 redis`
+  
+`./gradlew clean build -x test`
+
+`java -Dspring.profiles.active=local -jar ./build/libes/CNU-SAM-BE-0.0.1-SNAPSHOT.jar`
+
+### [발표 자료](https://docs.google.com/presentation/d/1Y0q7jJ7Z9ecbyBmio7GP2LWS1yq0IYEHojlePhpeQhI/edit#slide=id.g12f65192fc9_0_25)
 
 <br>
 
