@@ -73,8 +73,8 @@
 
 ## (중간) 결과물
 
-### 프로젝트 결과()
-#### Docker로 설치
+### 프로젝트 결과
+#### Docker로 설치-BE
 
 `docker pull mysql`
 
@@ -82,11 +82,11 @@
 
 `docker pull fortune00/cnusam`
  
- #### Docker로 실행
+ #### Docker로 실행-BE
  
  `docker run fortune00/cnusam`
 
-#### 직접 파일 실행
+#### 직접 파일 실행-BE
 
 `docker run -p 3360:3306 -e MYSQL_ROOT_PASSWORD=root mysql`
  
@@ -98,7 +98,7 @@
 
 ### [발표 자료](https://docs.google.com/presentation/d/1Y0q7jJ7Z9ecbyBmio7GP2LWS1yq0IYEHojlePhpeQhI/edit#slide=id.g12f65192fc9_0_25)
 
-<br>
+### [데모 영상](https://www.youtube.com/watch?v=G3NfMfse_ik)
 
 ## Team Member
 |이름|아이디|역할|
@@ -106,3 +106,5 @@
 |🦙 박은식|shellboy|팀장 & 프론트 개발|
 |🐥 문정현|MoonDD|백엔드 개발|
 |🦕 복신영|fortune00|백엔드 개발 & 디자인|
+
+
